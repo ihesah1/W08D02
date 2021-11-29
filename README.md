@@ -23,6 +23,9 @@ Now install the dependencies:
 
 Also we need nodemon to restart the server whenever code is changed.
 
+Then include the module to your JavaScript code with require:
+
+```const bcrypt = require("bcrypt");```
 
 Now, we need to initialize the server  here.
 
