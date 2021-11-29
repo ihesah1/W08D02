@@ -1,5 +1,6 @@
-const roleModel = require("./../../db/models/role");
+const roleModel = require("./../../db/models/role"); ///importt
 
+/////create funcs to hundle req & res my routers
 const createRole = (req, res) => {
   const newRole = new roleModel(req.body);
   newRole
@@ -11,8 +12,6 @@ const createRole = (req, res) => {
       res.status(400).json(err);
     });
 };
-
-
 const roles = (req, res) => {
   roleModel
     .find({})
@@ -24,7 +23,7 @@ const roles = (req, res) => {
     });
 };
 
-
+// exporttt
 module.exports = {
   createRole,
   roles,
