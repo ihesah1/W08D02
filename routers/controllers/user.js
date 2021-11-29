@@ -7,6 +7,7 @@ const register = async (req, res) => {
     const SALT = Number(process.env.SALT);
     const savedEmail = email.toLowerCase();
     const hashedPassword = await bcrypt.hash(password, SALT);
+    
     const newUser = new userModel({
       email: savedEmail,
       password: hashedPassword,
@@ -22,9 +23,7 @@ const register = async (req, res) => {
         res.status(400).json(err);
       });
   };
-  
-  
-  
+  // logiiin
   const login = (req, res) => {
     const { email, password } = req.body;
     const SECRET_KEY = process.env.SECRET_KEY;
@@ -39,7 +38,6 @@ const register = async (req, res) => {
             const options={
               expiresIn: 60*60
             }
-  
             const token = await jwt.sign(payload, SECRET_KEY, options)
             console.log(token);
   
