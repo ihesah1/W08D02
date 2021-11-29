@@ -1,5 +1,6 @@
 
-# :pushpin: Login & Register task using Node/Express using bcrypt to hash passwords and jwt (jsonwebtoken)
+# :pushpin: Login & Register task using Node/Express
+## using bcrypt to hash passwords and jwt (jsonwebtoken)
 
 Lets go :computer: !
 
@@ -54,6 +55,13 @@ login/db.js
         { useNewUrlParser: true, useUnifiedTopology: true },
         console.log('Database Connected')
     );
+    
+Hashing a password in Node.js
+The bcrypt NPM package is a JavaScript implementation of the bcrypt password hashing function that allows you to easily create a hash out of a password string. Unlike encryption which you can decode to get back the original password, hashing is a one-way function that can’t be reversed once done.
+This code hashes the password 'Pa$$w0rd' using bcrypt and stores the result in the passwordHash variable.
+
+``` const passwordHash = bcrypt.hashSync('Pa$$w0rd', 10); ```
+
 
 Now we need to bring this file in index.js
 
