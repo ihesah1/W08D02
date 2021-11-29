@@ -52,7 +52,7 @@ login/db.js
         console.log('Database Connected')
     );
 
-Now we need to bring this file in server.js
+Now we need to bring this file in index.js
 
 
     const db = require('./db');
