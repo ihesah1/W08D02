@@ -1,8 +1,10 @@
-# W08D02
-## Login & Register task using Node/Express using bcrypt to hash passwords and jwt (jsonwebtoken)
 
+# Login & Register task using Node/Express using bcrypt to hash passwords and jwt (jsonwebtoken)
 
 Lets go !
+## Requirement
+
+``` Nodejs, Mongodb, Core ,bcrypt ,jwt ```
 
     
     cd Desktop
