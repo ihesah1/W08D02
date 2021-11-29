@@ -1,10 +1,11 @@
 
-# Login & Register task using Node/Express using bcrypt to hash passwords and jwt (jsonwebtoken)
+# :pushpin: Login & Register task using Node/Express using bcrypt to hash passwords and jwt (jsonwebtoken)
 
-Lets go !
+Lets go :computer: !
+
 ## Requirement
 
-``` Nodejs, Mongodb, Core ,bcrypt ,jwt ```
+``` Nodejs,Express, Mongodb, Core ,bcrypt ,jwt ```
 
     
     cd Desktop
